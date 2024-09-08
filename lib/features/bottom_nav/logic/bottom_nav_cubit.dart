@@ -5,5 +5,8 @@ class BottomNavCubit extends Cubit<int> {
 
   void updateIndex(int index) => emit(index);
 
+  void getHome() => emit(0);
+  void getCategories() => emit(1);
+  void getServices() => emit(2);
 
 }

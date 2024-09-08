@@ -4,11 +4,13 @@ import 'package:test_b/core/routing/routes.dart';
 import 'package:test_b/core/routing/app_router.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(TestB());
 }
 
-class MyApp extends StatelessWidget {
+class TestB extends StatelessWidget {
   final AppRouter _appRouter = AppRouter();
+
+  TestB({super.key});
 
   @override
   Widget build(BuildContext context) {

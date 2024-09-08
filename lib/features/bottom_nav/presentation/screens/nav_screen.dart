@@ -31,8 +31,8 @@ class _NavScreenState extends State<NavScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return  BlocProvider(
-            create: (context) => BottomNavCubit(),
+    return BlocProvider(
+      create: (context) => BottomNavCubit(),
       child: BlocBuilder<BottomNavCubit, int>(
         builder: (context, state) {
           return Scaffold(

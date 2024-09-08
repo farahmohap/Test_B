@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lottie/lottie.dart';
 
 class MedicalServiceScreen extends StatelessWidget {
@@ -11,12 +12,17 @@ class MedicalServiceScreen extends StatelessWidget {
         title: const Text('Medical'),
         centerTitle: true,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Lottie.asset("assets/animations/medical.json"),
-          const Text('Medical Service Screen'),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text('Medical Service Screen'),
+            SizedBox(
+              height: 10.h,
+            ),
+            Lottie.asset("assets/animations/medical.json"),
+          ],
+        ),
       ),
     );
   }

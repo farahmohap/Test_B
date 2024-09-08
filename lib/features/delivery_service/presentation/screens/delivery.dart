@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lottie/lottie.dart';
 
 class DeliveryServiceScreen extends StatelessWidget {
@@ -8,15 +9,20 @@ class DeliveryServiceScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Medical'),
+        title: const Text('Delivery'),
         centerTitle: true,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Lottie.asset("assets/animations/delivery.json"),
-          const Text('Delivery Service Screen'),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text('Delivery Service Screen'),
+            SizedBox(
+              height: 10.h,
+            ),
+            Lottie.asset("assets/animations/delivery.json"),
+          ],
+        ),
       ),
     );
   }

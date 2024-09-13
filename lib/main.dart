@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:test_b/core/routing/routes.dart';
 import 'package:test_b/core/routing/app_router.dart';
+import 'package:test_b/features/bottom_nav/presentation/screens/presist_nav.dart';
 
 void main() {
   runApp(TestB());
@@ -14,11 +15,10 @@ class TestB extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
+    return const ScreenUtilInit(
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        onGenerateRoute: _appRouter.generateRoute,
-        initialRoute: Routes.nav,
+        home: BaseScreen(),
       ),
     );
   }

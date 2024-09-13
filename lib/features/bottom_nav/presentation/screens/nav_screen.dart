@@ -20,14 +20,14 @@ class _NavScreenState extends State<NavScreen> {
     Container(),
   ];
 
-  void _showServicesBottomSheet(BuildContext context) {
-    showModalBottomSheet(
-      context: context,
-      builder: (BuildContext context) {
-        return const BottomSheetBody();
-      },
-    );
-  }
+  // void _showServicesBottomSheet(BuildContext context) {
+  //   showModalBottomSheet(
+  //     context: context,
+  //     builder: (BuildContext context) {
+  //       return const BottomSheetBody();
+  //     },
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class _NavScreenState extends State<NavScreen> {
             bottomNavigationBar: BottomNavBarWidget(
               onTap: (index) {
                 if (index == 2) {
-                  _showServicesBottomSheet(context);
+                  //  _showServicesBottomSheet(context);
                 } else {
                   context.read<BottomNavCubit>().updateIndex(index);
                 }
